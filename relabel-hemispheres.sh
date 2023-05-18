@@ -14,5 +14,4 @@ done
 c3d WHS-v4.01-right-hemisphere.nii.gz -replace $argsr -o WHS-v4.01-right-hemisphere-relabeled.nii.gz
 c3d WHS-v4.01-left-hemisphere.nii.gz -replace $argsl -o WHS-v4.01-left-hemisphere-relabeled.nii.gz
 
-c3d WHS-v4.01-left-hemisphere-relabeled.nii.gz WHS-v4.01-right-hemisphere-relabeled.nii.gz -tile x -o WHS-v4.01-both-hemispheres-relabeled-xyflip.nii.gz
-c3d WHS-v4.01-both-hemispheres-relabeled-xyflip.nii.gz -flip xy -o WHS-v4.01-both-hemispheres-relabeled.nii.gz
+c3d WHS-v4.01-left-hemisphere-relabeled.nii.gz WHS-v4.01-right-hemisphere-relabeled.nii.gz -tile x -flip xy -o WHS-v4.01-both-hemispheres-relabeled.nii.gz
